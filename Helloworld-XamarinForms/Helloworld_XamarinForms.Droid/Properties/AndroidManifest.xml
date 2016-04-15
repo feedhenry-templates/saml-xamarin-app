@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="1" package="com.MyApp">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
+	<application android:label="HelloWorld-XF" android:theme="@style/MyTheme" android:icon="@drawable/icon"></application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>
