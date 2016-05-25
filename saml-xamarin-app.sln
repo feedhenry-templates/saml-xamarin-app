@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saml-android-app", "Helloworld-XamarinForms\Helloworld_XamarinForms.Droid\saml-android-app.csproj", "{3EA1C7B8-78DB-4871-A52E-CEA03C7FEE8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saml-android-app", "saml-xamarin-app\saml-android-app\saml-android-app.csproj", "{3EA1C7B8-78DB-4871-A52E-CEA03C7FEE8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saml-ios-app", "Helloworld-XamarinForms\Helloworld_XamarinForms.iOS\saml-ios-app.csproj", "{DEA70098-C563-4F78-A7AC-ECD0503BE4A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saml-ios-app", "saml-xamarin-app\saml-ios-app\saml-ios-app.csproj", "{DEA70098-C563-4F78-A7AC-ECD0503BE4A2}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "saml-shared", "Helloworld-XamarinForms\Helloworld_XamarinForms.Shared\saml-shared.shproj", "{D460015B-EC5B-4A9F-9056-476B98A3F930}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "saml-shared", "saml-xamarin-app\saml-shared\saml-shared.shproj", "{D460015B-EC5B-4A9F-9056-476B98A3F930}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
