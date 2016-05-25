@@ -10,7 +10,6 @@ namespace Helloworld_XamarinForms.Shared.Models
     {
         About,
         Blog,
-        Hello,
         Login
     }
     public class MainMenuItem : BaseModel

@@ -15,18 +15,28 @@ namespace Helloworld_XamarinForms.Shared.Views
         {
             InitializeComponent ();
             BindingContext = loginModel = new LoginViewModel(this);
-            MyWebView.Navigated += (object sender, WebNavigatedEventArgs e) => 
+			MyWebView.Navigated += async (object sender, WebNavigatedEventArgs e) => 
             {
-                if (e.Url.Contains("login/ok"))
-                    ShowSignedIn();
+				if (e.Url.Contains("login/ok")) 
+				{
+                    await ShowSignedIn();
+				}
             };
         }
 
         private async Task ShowSignedIn()
         {
-           var success = await loginModel.ValidateSignIn ();
-           if (success)
-            SignIn.Text = "Signed In";
+           var user = await loginModel.ValidateSignIn ();
+			if (user != null) 
+			{
+				MyWebView.IsVisible = false;
+				SignIn.IsVisible = false;
+				SignedIn.IsVisible = true;
+
+				Name.Text = user.Name;
+				Email.Text = user.Email;
+				Expires.Text = user.Expires.ToString ();
+			}
         }
     }
 }

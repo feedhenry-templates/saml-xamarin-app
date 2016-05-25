@@ -26,9 +26,7 @@ namespace Helloworld_XamarinForms.Shared
                 Icon = "slideout.png"
             };
             //setup home page
-            NavigateAsync(MenuType.Hello);
-
-            //InvalidateMeasure();
+			NavigateAsync(MenuType.Login);
         }
 
         public async Task NavigateAsync(MenuType id)
@@ -44,9 +42,6 @@ namespace Helloworld_XamarinForms.Shared
                         break;
                     case MenuType.Blog:
                         Pages.Add(id, new NavigationPage(new BlogPage()));
-                        break;
-                    case MenuType.Hello:
-                        Pages.Add(id, new NavigationPage(new HelloPage()));
                         break;
                     case MenuType.Login:
                         Pages.Add(id, new NavigationPage(new LoginPage()));

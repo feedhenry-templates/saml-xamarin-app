@@ -5,7 +5,8 @@
         <ContentPage.Content>
           <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
-                                <Button x:Name="SignIn" Text="SignIn" Command="{Binding LoginCommand}"/>
+                        		<Label>Click the "Sign In" button below to sign in via your configured SAML IdP</Label>
+                                <Button x:Name="SignIn" Text="Sign In" Command="{Binding LoginCommand}"/>
                                 <WebView IsVisible="{Binding Show}" x:Name="MyWebView" Source="{Binding Source}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
                         </StackLayout>
 
@@ -15,6 +16,33 @@
                                 <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White">
                                 </ActivityIndicator>
                                 <Label Text="Authenticating..." HorizontalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+
+                        <StackLayout x:Name="SignedIn" VerticalOptions="Center" HorizontalOptions="Center" Padding="30" IsVisible="false">
+                        	<Grid>
+								<Grid.RowDefinitions>
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                </Grid.RowDefinitions>
+                
+				                <Grid.ColumnDefinitions>
+				                    <ColumnDefinition Width="100" />
+				                    <ColumnDefinition Width="*" />
+				                </Grid.ColumnDefinitions>
+
+	                        	<Label Grid.ColumnSpan="2" Text="Great! You're signed in."/>
+	                        	<Label Grid.Row="1" Grid.Column="0" Text="Username"/>
+	                        	<Label Grid.Row="1" Grid.Column="1" x:Name="Name"/>
+
+	                        	<Label Grid.Row="2" Grid.Column="0" Text="Email"/>
+	                        	<Label Grid.Row="2" Grid.Column="1" x:Name="Email"/>
+
+	                        	<Label Grid.Row="3" Grid.Column="0" Text="Expires on"/>
+	                        	<Label Grid.Row="3" Grid.Column="1" x:Name="Expires"/>
+	                        </Grid>
                         </StackLayout>
                 </AbsoluteLayout>
         </ContentPage.Content>

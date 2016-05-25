@@ -34,9 +34,7 @@ namespace Helloworld_XamarinForms.Shared.Views
             {
                 new MainMenuItem { Title = "Login", MenuType = MenuType.Login, Icon ="" },
                 new MainMenuItem { Title = "About", MenuType = MenuType.About, Icon ="" },
-                new MainMenuItem { Title = "Blog", MenuType = MenuType.Blog, Icon = "" },
-                new MainMenuItem { Title = "Hello", MenuType = MenuType.Hello, Icon ="" }
-
+                new MainMenuItem { Title = "Blog", MenuType = MenuType.Blog, Icon = "" }
             };
 
             ListViewMenu.SelectedItem = menuItems[0];
