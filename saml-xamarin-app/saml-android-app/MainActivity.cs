@@ -7,7 +7,7 @@ using Android.Widget;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using FHSDK.Droid;
+using FHSDK;
 using System.Threading.Tasks;
 using Helloworld_XamarinForms.Shared;
 
