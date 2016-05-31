@@ -22,7 +22,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Helloworld_XamarinForms.Shared.ViewModels
+namespace saml_xamarin.Shared.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

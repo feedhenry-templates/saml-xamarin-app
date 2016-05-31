@@ -7,9 +7,9 @@ using UIKit;
 using Xamarin.Forms;
 using FHSDK;
 using System.Threading.Tasks;
-using Helloworld_XamarinForms.Shared;
+using saml_xamarin.Shared;
 
-namespace Helloworld_XamarinForms.iOS
+namespace saml_xamarin.Droid.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 

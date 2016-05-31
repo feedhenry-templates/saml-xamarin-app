@@ -21,7 +21,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Helloworld_XamarinForms.Shared.Views
+namespace saml_xamarin.Shared.Views
 {
     public partial class AboutPage : ContentPage
     {

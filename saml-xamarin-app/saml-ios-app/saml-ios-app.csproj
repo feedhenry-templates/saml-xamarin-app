@@ -6,7 +6,7 @@
     <ProjectGuid>{DEA70098-C563-4F78-A7AC-ECD0503BE4A2}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Helloworld_XamarinForms.iOS</RootNamespace>
+    <RootNamespace>saml_xamarin.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>Helloworld_XamarinFormsiOS</AssemblyName>
     <NuGetPackageImportStamp>

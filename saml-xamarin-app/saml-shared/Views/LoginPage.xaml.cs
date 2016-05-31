@@ -17,10 +17,10 @@ using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using Helloworld_XamarinForms.Shared.ViewModels;
+using saml_xamarin.Shared.ViewModels;
 using System.Threading.Tasks;
 
-namespace Helloworld_XamarinForms.Shared.Views
+namespace saml_xamarin.Shared.Views
 {
     public partial class LoginPage : ContentPage
     {

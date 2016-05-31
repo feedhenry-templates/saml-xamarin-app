@@ -19,7 +19,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Helloworld_XamarinForms.Shared.Models
+namespace saml_xamarin.Shared.Models
 {
     public class BaseModel
     {

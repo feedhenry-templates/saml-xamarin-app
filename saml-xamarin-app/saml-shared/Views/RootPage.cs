@@ -20,11 +20,11 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Helloworld_XamarinForms.Shared.Models;
-using Helloworld_XamarinForms.Shared.ViewModels;
-using Helloworld_XamarinForms.Shared.Views;
+using saml_xamarin.Shared.Models;
+using saml_xamarin.Shared.ViewModels;
+using saml_xamarin.Shared.Views;
 
-namespace Helloworld_XamarinForms.Shared
+namespace saml_xamarin.Shared
 {
     public class RootPage : MasterDetailPage
     {

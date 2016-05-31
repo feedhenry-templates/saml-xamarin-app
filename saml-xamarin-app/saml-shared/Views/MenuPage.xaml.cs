@@ -19,10 +19,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Helloworld_XamarinForms.Shared.Models;
-using Helloworld_XamarinForms.Shared.ViewModels;
+using saml_xamarin.Shared.Models;
+using saml_xamarin.Shared.ViewModels;
 
-namespace Helloworld_XamarinForms.Shared.Views
+namespace saml_xamarin.Shared.Views
 {
     public partial class MenuPage : ContentPage
     {

@@ -6,7 +6,7 @@
     <SharedGUID>{D460015B-EC5B-4A9F-9056-476B98A3F930}</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Helloworld_XamarinForms.Shared</Import_RootNamespace>
+    <Import_RootNamespace>saml_xamarin.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />

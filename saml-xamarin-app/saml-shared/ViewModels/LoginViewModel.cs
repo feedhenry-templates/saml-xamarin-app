@@ -21,7 +21,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 using FHSDK.Config;
 
-namespace Helloworld_XamarinForms.Shared.ViewModels
+namespace saml_xamarin.Shared.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {

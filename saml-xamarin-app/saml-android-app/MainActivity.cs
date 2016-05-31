@@ -9,9 +9,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using FHSDK;
 using System.Threading.Tasks;
-using Helloworld_XamarinForms.Shared;
+using saml_xamarin.Shared;
 
-namespace Helloworld_XamarinForms.Droid
+namespace saml_xamarin.Droid
 {
     [Activity(Label = "Helloworld-XF", Icon = "@drawable/icon", MainLauncher = true,
         ScreenOrientation = ScreenOrientation.Portrait,

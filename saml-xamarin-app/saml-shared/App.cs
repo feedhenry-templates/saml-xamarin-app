@@ -20,7 +20,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace Helloworld_XamarinForms.Shared
+namespace saml_xamarin.Shared
 {
     public class App : Application
     {
