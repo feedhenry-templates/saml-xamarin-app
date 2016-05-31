@@ -19,7 +19,7 @@
              x:Class="Helloworld_XamarinForms.Shared.Views.BlogPage" Title="Blog Page">
 
         <StackLayout Orientation="Vertical">
-                <WebView Source="https://www.feedhenry.org/category/blog/" 
+                <WebView Source="https://www.feedhenry.com/category/blog/" 
                         VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
         </StackLayout>
 </ContentPage>
