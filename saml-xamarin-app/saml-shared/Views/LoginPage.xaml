@@ -18,22 +18,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
         x:Class="saml_xamarin.Shared.Views.LoginPage" Title="Login Page">
         <ContentPage.Content>
-          <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
-                        		<Label>Click the "Sign In" button below to sign in via your configured SAML IdP</Label>
-                                <Button x:Name="SignIn" Text="Sign In" Command="{Binding LoginCommand}"/>
-                                <WebView IsVisible="{Binding Show}" x:Name="MyWebView" Source="{Binding Source}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
-                        </StackLayout>
+        <AbsoluteLayout>
+                <StackLayout HorizontalOptions="Center" Padding="30">
+            		<Label>Click the "Sign In" button below to sign in via your configured SAML IdP</Label>
+                    <Button x:Name="SignIn" Text="Sign In" Command="{Binding LoginCommand}"/>
+                </StackLayout>
+                <WebView IsVisible="{Binding Source}" x:Name="MyWebView" Source="{Binding Source}" 
+                    AbsoluteLayout.LayoutBounds="0,120,500,500"/>
 
                         <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" Padding="12"
-                                  AbsoluteLayout.LayoutFlags="PositionProportional"
-                                  AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-                                <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White">
-                                </ActivityIndicator>
-                                <Label Text="Authenticating..." HorizontalOptions="Center" TextColor="White"/>
+                          AbsoluteLayout.LayoutFlags="PositionProportional"
+                          AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                            <ActivityIndicator IsRunning="true" Color ="White">
+                            </ActivityIndicator>
+                            <Label Text="Authenticating..." HorizontalOptions="Center" TextColor="White"/>
                         </StackLayout>
 
-                        <StackLayout x:Name="SignedIn" VerticalOptions="Center" HorizontalOptions="Center" Padding="30" IsVisible="false">
+                        <StackLayout x:Name="SignedIn" HorizontalOptions="Center" Padding="30" IsVisible="false"
+                        	AbsoluteLayout.LayoutFlags="PositionProportional"
+                          	AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
                         	<Grid>
 								<Grid.RowDefinitions>
 				                    <RowDefinition />
@@ -59,6 +62,6 @@
 	                        	<Label Grid.Row="3" Grid.Column="1" x:Name="Expires"/>
 	                        </Grid>
                         </StackLayout>
-                </AbsoluteLayout>
+		</AbsoluteLayout>
         </ContentPage.Content>
 </ContentPage>
