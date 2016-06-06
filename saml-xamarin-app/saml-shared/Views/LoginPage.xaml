@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright Red Hat, Inc, and individual contributors.
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+  http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.     
+-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+        x:Class="saml_xamarin.Shared.Views.LoginPage" Title="Login Page">
+        <ContentPage.Content>
+          <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
+                        		<Label>Click the "Sign In" button below to sign in via your configured SAML IdP</Label>
+                                <Button x:Name="SignIn" Text="Sign In" Command="{Binding LoginCommand}"/>
+                                <WebView IsVisible="{Binding Show}" x:Name="MyWebView" Source="{Binding Source}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+                        </StackLayout>
+
+                        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" Padding="12"
+                                  AbsoluteLayout.LayoutFlags="PositionProportional"
+                                  AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                                <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White">
+                                </ActivityIndicator>
+                                <Label Text="Authenticating..." HorizontalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+
+                        <StackLayout x:Name="SignedIn" VerticalOptions="Center" HorizontalOptions="Center" Padding="30" IsVisible="false">
+                        	<Grid>
+								<Grid.RowDefinitions>
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                    <RowDefinition />
+				                </Grid.RowDefinitions>
+                
+				                <Grid.ColumnDefinitions>
+				                    <ColumnDefinition Width="100" />
+				                    <ColumnDefinition Width="*" />
+				                </Grid.ColumnDefinitions>
+
+	                        	<Label Grid.ColumnSpan="2" Text="Great! You're signed in."/>
+	                        	<Label Grid.Row="1" Grid.Column="0" Text="Username"/>
+	                        	<Label Grid.Row="1" Grid.Column="1" x:Name="Name"/>
+
+	                        	<Label Grid.Row="2" Grid.Column="0" Text="Email"/>
+	                        	<Label Grid.Row="2" Grid.Column="1" x:Name="Email"/>
+
+	                        	<Label Grid.Row="3" Grid.Column="0" Text="Expires on"/>
+	                        	<Label Grid.Row="3" Grid.Column="1" x:Name="Expires"/>
+	                        </Grid>
+                        </StackLayout>
+                </AbsoluteLayout>
+        </ContentPage.Content>
+</ContentPage>
