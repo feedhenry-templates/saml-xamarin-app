@@ -69,8 +69,8 @@ namespace saml_xamarin.Shared.ViewModels
 			{
 				var sso = (string)resData ["sso"];
 				if (!string.IsNullOrEmpty (sso)) {
-					source = sso;
-					show = true;
+					Source = sso;
+					Show = true;
 				}
 			} else 
 			{
