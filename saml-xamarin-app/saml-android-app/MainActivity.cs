@@ -25,12 +25,6 @@ namespace saml_xamarin.Droid
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
             LoadApplication(new App());
-            InitFHClient();
-        }
-
-        private async Task InitFHClient ()
-        {
-            await Task.Run (() => {FHClient.Init(); });
         }
     }
 }

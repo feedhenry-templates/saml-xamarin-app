@@ -32,6 +32,13 @@ If you wish to contribute to this template, the following information may be hel
 
 4. Run the project
  
+## Troubleshootings
+
+* Compilation error: error XA5209: Unzipping failed
+
+When building, Xamarin fetches dependencies in `~/.local/share/Xamarin/`, it happens from times to times that the download of dependencies goes wrong and leave your `.local` folder in a corrupted state.
+It happens when building Android (more dependencies to fetch), the best way to fix issue like missing [Android.Support.v4 support](https://forums.xamarin.com/discussion/42982/android-build-failure-unzipping-failed) is to delete `~/.local/share/` folder and build again. 
+
 ## How does it work?
 
 ### Using FHClient
