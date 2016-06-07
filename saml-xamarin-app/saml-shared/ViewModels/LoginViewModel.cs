@@ -28,8 +28,10 @@ namespace saml_xamarin.Shared.ViewModels
         public LoginViewModel (Page page) : base(page)
         {
             IsBusy = false;
+			IsInitialized = false;
+			Task.Run(async () => IsInitialized = await FHClient.Init());
         }
-
+	
         #region Commands
         private Command loginCommand;
 
@@ -88,6 +90,14 @@ namespace saml_xamarin.Shared.ViewModels
         }
 
         #region Properties
+		private bool isInitialized;
+		//public const string IsInitializedPropertyName = "IsInitialized";
+		public bool IsInitialized
+		{
+			get { return isInitialized; }
+			set { SetProperty(ref isInitialized, value); }
+		}
+			
         private string source = string.Empty;
         public const string SourcePropertyName = "Source";
         public string Source

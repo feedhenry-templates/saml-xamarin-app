@@ -34,14 +34,9 @@ namespace saml_xamarin.Droid.iOS
                 });
             Forms.Init();
             LoadApplication(new App());
-            InitFHClient();
 
             return base.FinishedLaunching(app, options);
         }
 
-        private async Task InitFHClient ()
-        {
-            await Task.Run (() => {FHClient.Init(); });
-        }
     }
 }

@@ -21,9 +21,9 @@
         <AbsoluteLayout>
                 <StackLayout HorizontalOptions="Center" Padding="30">
             		<Label>Click the "Sign In" button below to sign in via your configured SAML IdP</Label>
-                    <Button x:Name="SignIn" Text="Sign In" Command="{Binding LoginCommand}"/>
+                    <Button x:Name="SignIn" Text="Sign In" Command="{Binding LoginCommand}" IsEnabled="{Binding IsInitialized}"/>
                 </StackLayout>
-                <WebView IsVisible="{Binding Source}" x:Name="MyWebView" Source="{Binding Source}" Scale="0.9"
+                <WebView IsVisible="{Binding Show}" x:Name="MyWebView" Source="{Binding Source}" Scale="0.9"
                     AbsoluteLayout.LayoutBounds="-25,120,500,500"/>
 
                         <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" Padding="12"
