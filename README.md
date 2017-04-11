@@ -1,6 +1,6 @@
 # saml-xamarin-app
 
-[![AppVeyor](https://img.shields.io/appveyor/ci/feedhenry-templates/saml-xamarin-app/master.svg)](https://ci.appveyor.com/project/feedhenry/saml-xamarin-app/) 
+[![AppVeyor](https://img.shields.io/appveyor/ci/feedhenry/saml-xamarin-app/master.svg)](https://ci.appveyor.com/project/feedhenry/saml-xamarin-app/) 
 
 Author: Erik Jan de Wit (edewit@redhat.com)   
 Level: Beginner   
